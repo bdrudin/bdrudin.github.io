@@ -1,3 +1,3 @@
 # This is My portofolio web
 
-create Oktober 2022.
+created October 14th 2022.
