@@ -1,0 +1,41 @@
+.home {
+  background-color: rgba(158, 236, 210, 0.952);
+  padding-top: 5rem;
+}
+
+.home span {
+  width: 5px;
+  height: 5px;
+  background-color: blue;
+  color: blue;
+  border-radius: 50%;
+}
+
+.home img {
+  border: 1px solid;
+  align-items: center;
+  justify-content: center;
+  height: 155px;
+  width: 155px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.home h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.home h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.home-social {
+  padding: 5px;
+  font-size: 25px;
+}
+.home-social a {
+  text-decoration: none;
+}
+
+.home-social a:hover {
+  opacity: 0.5;
+}
