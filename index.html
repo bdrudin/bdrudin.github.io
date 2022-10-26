@@ -15,7 +15,6 @@
 <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -23,72 +22,151 @@
     <link rel="icon" href="assets/img/icon.png" type="image/x-icon">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Badrudin</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-sm-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container justify-content-center">
+        <div class="navigation ">
+          <ul>
+            <li class="list active">
+              <a href="#home">
+                <span class="icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text">Home</span>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+            <li class="list">
+              <a href="#profile">
+                <span class="icon">
+                  <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span class="text">Profile</span>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Project</a>
+            <li class="list">
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="ribbon-outline"></ion-icon>
+                </span>
+                <span class="text">Project</span>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+            <li class="list">
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="chatbubble-outline"></ion-icon>
+                </span>
+                <span class="text">Contact</span>
+              </a>
             </li>
+            <div class="indicator"></div>
           </ul>
+        </div>
         </div>
       </nav>
     </div>
-
-    <section class="home text-center" id="home">
+<!-- HOME -->
+    <section class="home" id="home">
       <div class="container">
+        <div class="row justify-content-center">
+          <div class="home-img">
+          </div>
+        </div>
         <div class="row">
-          <div class="">
-            <img src="assets/img/profile.jpg" alt="" class="rounded-circle img-thumbnail">
-            <h1 class="text-primary">Badrudin</h1>
-            <h5>Junior Web Developer</h5>
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
-            <hr class="my-md-6">
-            <div class="home-social text-primary">
-              <a href="http://" target="_blank" >
-                <i class="fa-brands fa-square-twitter"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-square-github"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-telegram"></i>
-              </a>
-            </div>
-            <a class="btn btn-secondary btn-lg" href="#" role="button">Download Resume</a>
+          <div class="home-title">
+            <h1 class="text-center fw-bold mt-3">Badrudin</h1>
+            <h6 class="text-center">Junior Web Developer</h6>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="home-social justify-content-center fs-2">
+            <a href="https://github.com/bdrudin" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            <a href="https://twitter.com/demonkit3?t=94kX1ytH0m7cS7a5NKML6g&s=09" target="_blank" >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            </a>
+            <a href="https://t.me/node_boy" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+          <div class="resume fw-bold">
+            <a href="#">Download Resume</a>
           </div>
         </div>
       </div>
-            <svg xmlns="http://www.w3.org/2000x/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,224L40,208C80,192,160,160,240,144C320,128,400,128,480,149.3C560,171,640,213,720,224C800,235,880,213,960,218.7C1040,224,1120,256,1200,250.7C1280,245,1360,203,1400,181.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     </section>
+    <!-- PROFILE -->
+    <section id="profile" class="profile mt-5">
+      <div class="container justify-content-center">
+        <div class="row justify-content-center">
+          <h1 class="text-center fw-bold mt-1">Profile</h1>
+          <div class="col mb-5" >
+            <div class="card text-center justify-content-center" style="background-color: var(--background);">
+              <div class="card-body">
+                <h4 class="text-center fw-bold" style="color: var(--headline);">Mengenai Saya:</h4>
+                <p class="card-text" style="color: var(--paragraf);">"Saya adalah orang yang suka multitasking dan berani mengambil resiko. Terbiasa dengan Linux dan menyukai terminal. Di bootcamp yang telah saya ikuti, saya mampu menyelesaikan tugas dan tantangan yang telah diberikan."</p>
+              </div>
+              <div class="card-img mb-4">
+                <img src="assets/img/about.jpg" class="card-img-bottom" alt="about" style="width: 18rem; border-radius: 7.5px;">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="background-color: var(--background); color: var(--paragraf);">
+              <div class="contact">
+                <h4 class="fw-bold ms-5 mt-3" style="color: var(--headline);">Kontak informasi</h4>
+                <div class="contact-info ms-5">
+                  <i class="fa-solid fa-envelope"></i><span class="contact-mail ms-3">badrudin.on@gmail.com</span> 
+                </div>
+                <div class="contact-info ms-5">
+                  <i class="fa-solid fa-square-phone"></i><span class="contact-phone ms-3">+6281585768935</span>
+                </div>
+              </div>
+              <div class="experience">
+                <h4 class="fw-bold mt-3 ms-5" style="color: var(--headline);">Pengalaman</h4>
+                <div class="list ms-5">
+                  <ul>
+                    <li>IDCamp Indosat Ooredo</li>
+                    <li>Lintasarta Cloudeka Digischool</li>
+                    <li>Digitalent Scholarship VSGA</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="certificate">
+                <h4 class="ms-5 fw-bold mt-3" style="color: var(--headline);">Sertifikat</h4>
+                <p class="ms-5">10+ Sertifikat</p>
+              </div>
+              <div class="programming">
+                <h4 class="fw-bold mt-2 ms-5 mb-3" style="color: var(--headline);">Programming</h4>
+                <div class="list">
+                  <ul>
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <li><i class="fa-brands fa-square-js"></i></li>
+                    <li><i class="fa-brands fa-php"></i></li>
+                    <li><i class="fa-brands fa-python"></i></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
     <!-- Main javascript -->
     <script src="assets/js/main.js"></script>

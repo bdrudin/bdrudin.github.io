@@ -1,41 +1,175 @@
-.home {
-  background-color: rgba(158, 236, 210, 0.952);
-  padding-top: 5rem;
+/* navbar */
+:root {
+  --clr: #222327;
+  /* colorhues */
+  --background: #004643;
+  --headline: #fffffe;
+  --paragraf: #abd1c6;
+  --button: #f9bc60;
+  --button-text: #001e1d;
+  /* ilustrasion */
+  --stroke: #001e1d;
+  --main: #e8e4e6;
+  --highlight: #f9bc60;
+  --secondary: #abd1c6;
+  --tertiary: #e16162;
 }
-
-.home span {
-  width: 5px;
-  height: 5px;
-  background-color: blue;
-  color: blue;
-  border-radius: 50%;
-}
-
-.home img {
-  border: 1px solid;
-  align-items: center;
+.navigation {
+  width: 30%;
+  height: 50px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 155px;
-  width: 155px;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  border-radius: 10px;
 }
-.home h1 {
-  font-size: 40px;
-  font-weight: bold;
+.navigation ul {
+  display: flex;
 }
-.home h5 {
-  font-size: 20px;
-  font-weight: bold;
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
 }
-.home-social {
-  padding: 5px;
-  font-size: 25px;
-}
-.home-social a {
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
   text-decoration: none;
 }
-
-.home-social a:hover {
-  opacity: 0.5;
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  text-align: center;
+  font-size: 1.35em;
+  transition: 0.5s;
+  color: var(--clr);
 }
+.navigation ul li.active a .icon {
+  transform: translateY(35px);
+}
+.navigation ul li a .text {
+  position: absolute;
+  color: var(--clr);
+  font-weight: 400;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.navigation ul li.active a .text {
+  opacity: 1;
+  font-weight: bold;
+  transform: translateY(-10px);
+}
+.indicator {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--main);
+  bottom: -70%;
+  border-radius: 50%;
+  border: 3px solid var(--background);
+  transition: 0.5s;
+}
+.navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(50px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(50px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(50px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(50px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(50px * 4));
+}
+/* end navbar */
+/* home */
+.home {
+  margin: auto;
+  background-color: var(--background);
+  width: 90%;
+  border-radius: 25px;
+}
+.home-img {
+  margin-top: 15%;
+  width: 150px;
+  height: 150px;
+  background-color: var(--main);
+  border-radius: 50%;
+  background-image: url("../img/4x8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-title {
+  color: var(--headline);
+  letter-spacing: 0.15rem;
+}
+.home-title h6 {
+  letter-spacing: 0.35rem;
+}
+.home-social {
+  display: flex;
+  padding: 0.5rem;
+}
+.home-social a {
+  color: var(--main);
+  margin-right: 1rem;
+}
+.home-social a:hover {
+  color: var(--highlight);
+}
+.resume {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.resume a {
+  color: var(--button-text);
+  padding: 0.55rem;
+  background-color: var(--main);
+  border-radius: 5px;
+  text-decoration: none;
+}
+.resume a:hover {
+  background-color: var(--highlight);
+}
+/* end home */
+/* Profile */
+.profile {
+  background-color: var(--secondary);
+}
+.profile h1 {
+  color: var(--stroke);
+}
+.contact-info {
+  font-size: 1.2rem;
+  text-indent: 0.75rem;
+}
+
+.certificate p {
+  text-indent: 0.75rem;
+}
+
+.programming ul {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+/* end profile */
