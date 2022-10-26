@@ -14,10 +14,14 @@
   --secondary: #abd1c6;
   --tertiary: #e16162;
 }
+body {
+  background-color: var(--secondary);
+}
 .navigation {
-  width: 30%;
-  height: 50px;
-  background: #fff;
+  /* height: 50px; */
+  width: 30rem;
+  height: 3.2rem;
+  background: var(--main);
   position: relative;
   display: flex;
   flex-direction: column;
