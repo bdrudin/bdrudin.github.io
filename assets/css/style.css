@@ -118,9 +118,14 @@ nav {
   height: 150px;
   background-color: var(--main);
   border-radius: 50%;
-  background-image: url("../img/4x8.png");
+  background-image: url("../img/profile.png");
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 0.5s;
+}
+.home-img:hover {
+  transform: translateY(10px);
+  border: 5px solid var(--paragraf);
 }
 .home-title {
   color: var(--headline);
