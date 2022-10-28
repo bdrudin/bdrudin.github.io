@@ -23,12 +23,12 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm sticky-top">
-      <div class="container justify-content-center">
+    <nav class="navbar sticky-top">
+    <div class="container justify-content-center">
         <div class="navigation ">
           <ul>
             <li class="list active">
-              <a href="#home">
+              <a href="#">
                 <span class="icon">
                   <ion-icon name="home-outline"></ion-icon>
                 </span>
@@ -52,7 +52,7 @@
               </a>
             </li>
             <li class="list">
-              <a href="#">
+              <a href="#contact">
                 <span class="icon">
                   <ion-icon name="chatbubble-outline"></ion-icon>
                 </span>
@@ -63,10 +63,10 @@
           </ul>
         </div>
         </div>
+      </div>
       </nav>
-    </div>
 <!-- HOME -->
-    <section class="home" id="home">
+    <section class="home mt-3" id="home">
       <div class="container">
         <div class="row justify-content-center">
           <div class="home-img">
@@ -74,18 +74,18 @@
         </div>
         <div class="row">
           <div class="home-title">
-            <h1 class="text-center fw-bold mt-3">Badrudin</h1>
+            <h1 class="text-center fw-bold mt-2">Badrudin</h1>
             <h6 class="text-center">Junior Web Developer</h6>
           </div>
         </div>
         <div class="row mt-3">
-          <div class="home-social justify-content-center fs-2 mb-3">
+          <div class="home-social justify-content-center fs-2 mb-1">
             <a href="https://github.com/bdrudin" target="_blank">
               <i class="fa-brands fa-github"></i>
             <a href="https://twitter.com/demonkit3?t=94kX1ytH0m7cS7a5NKML6g&s=09" target="_blank" >
               <i class="fa-brands fa-twitter"></i>
             </a>
-            <a href="" target="_blank">
+            <a href="#" target="_blank">
               <i class="fa-brands fa-linkedin"></i>
             </a>
             </a>
@@ -93,7 +93,7 @@
               <i class="fa-brands fa-telegram"></i>
             </a>
           </div>
-          <div class="resume fw-bold">
+          <div class="resume fw-bold mb-3">
             <a href="#">Download Resume</a>
           </div>
         </div>
@@ -102,33 +102,36 @@
     <!-- PROFILE -->
     <section id="profile" class="profile mt-5">
       <div class="container justify-content-center">
+<!-- About me -->
         <div class="row justify-content-center">
-          <h1 class="text-center fw-bold mt-1 mb-4">Profile</h1>
-          <div class="col mb-5" >
-            <div class="card text-center justify-content-center" style="background-color: var(--background);">
+          <h1 class="text-center fw-bold mt-2 mb-4" style="color: var(--headline);">Profile</h1>
+          <div class="col-lg-6 col-md-12 col-sm-12 mb-5" >
+            <div class="card text-center justify-content-center" style="background-color: var(--main);">
               <div class="card-body">
-                <h4 class="text-center fw-bold" style="color: var(--headline);">Mengenai Saya:</h4>
-                <p class="card-text" style="color: var(--paragraf);">"Saya adalah orang yang suka multitasking dan berani mengambil resiko. Terbiasa dengan Linux dan menyukai terminal. Di bootcamp yang telah saya ikuti, saya mampu menyelesaikan tugas dan tantangan yang telah diberikan."</p>
+                <h4 class="text-center fw-bold" style="color: var(--stroke);">Mengenai Saya:</h4>
+                <p class="card-text" style="color: var(--stroke);">"Saya adalah orang yang suka multitasking dan berani mengambil resiko. Terbiasa dengan Linux dan menyukai terminal. Di bootcamp yang telah saya ikuti, saya mampu menyelesaikan tugas dan tantangan yang telah diberikan."</p>
               </div>
               <div class="card-img mb-4">
                 <img src="assets/img/about.jpg" class="card-img-bottom" alt="about" style="width: 18rem; border-radius: 7.5px;">
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card" style="background-color: var(--background); color: var(--paragraf);">
+
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="card" style="background-color: var(--main); color: var(--stroke);">
               <div class="contact">
-                <h4 class="fw-bold ms-5 mt-3" style="color: var(--headline);">Kontak informasi</h4>
-                <div class="contact-info ms-5">
+                <h4 class="fw-bold ms-3 mt-3" style="color: var(--stroke);">Kontak informasi</h4>
+                <div class="contact-info ms-3">
                   <i class="fa-solid fa-envelope"></i><span class="contact-mail ms-3">badrudin.on@gmail.com</span> 
                 </div>
-                <div class="contact-info ms-5">
-                  <i class="fa-solid fa-square-phone"></i><span class="contact-phone ms-3">+6281585768935</span>
+                <div class="contact-info ms-3">
+                  <i class="fa-solid fa-square-phone"></i><span class="contact-phone ms-3">+62815-8576-8935</span>
                 </div>
               </div>
+<!-- experience -->
               <div class="experience">
-                <h4 class="fw-bold mt-3 ms-5" style="color: var(--headline);">Pengalaman</h4>
-                <div class="list ms-5">
+                <h4 class="fw-bold mt-3 ms-3" style="color: var(--stroke);">Pengalaman</h4>
+                <div class="list ms-3">
                   <ul>
                     <li>IDCamp Indosat Ooredo</li>
                     <li>Lintasarta Cloudeka Digischool</li>
@@ -136,28 +139,121 @@
                   </ul>
                 </div>
               </div>
+
               <div class="certificate">
-                <h4 class="ms-5 fw-bold mt-3" style="color: var(--headline);">Sertifikat</h4>
-                <p class="ms-5">10+ Sertifikat</p>
+                <h4 class="ms-3 fw-bold mt-3" style="color: var(--stroke);">Sertifikat</h4>
+                <p class="ms-3">10+ Sertifikat</p>
               </div>
+
               <div class="programming">
-                <h4 class="fw-bold mt-2 ms-5 mb-3" style="color: var(--headline);">Programming</h4>
+                <h4 class="fw-bold mt-2 mb-3 text-center" style="color: var(--stroke);">Programming Language</h4>
                 <div class="list">
                   <ul>
                     <li><i class="fa-brands fa-html5"></i></li>
                     <li><i class="fa-brands fa-css3-alt"></i></li>
                     <li><i class="fa-brands fa-square-js"></i></li>
                     <li><i class="fa-brands fa-php"></i></li>
-                    <li><i class="fa-brands fa-python"></i></li>
                     </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
+<!-- my skills -->
+<div class="container my-skills" id="my-skills">
+  <h1 class="text-center fw-bold" style="color: var(--headline);">My Skills</h1>
+  <div class="row">
+    <div class="col-lg-4 col-sm-12 mb-1">
+      <div class="card">
+        <div class="card-body" style="color: var(--background); background-color: var(--paragraf);">
+          <h4 class="ms-2 mt-2 fw-bold" style="color: var(--button-text);">Frontend</h4>
+          <ul>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>React/JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-12 mb-1">
+      <div class="card">
+        <div class="card-body" style="color: var(--background); background-color: var(--paragraf);">
+          <h4 class="ms-2 mt-2 fw-bold" style="color: var(--button-text);">Backend</h4>
+          <ul>
+            <li>Node Js</li>
+            <li>PHP</li>
+            <li>-</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-12 mb-1">
+      <div class="card">
+        <div class="card-body" style="color: var(--background); background-color: var(--paragraf);">
+          <h4 class="ms-2 mt-2 fw-bold" style="color: var(--button-text);">Database</h4>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>-</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </section>
 
+    <!-- Project -->
+    <section class="project" id="project">
+      <div class="container">
+        <h1 class="text-center fw-bold mb-2 mt-2">Project</h1>
+      </div>
+    </section>
+    <!-- end of project -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h1 class="text-center fw-bold mb-4 mt-2" style="color: var(--stroke);">Contact</h1>
+        <div class="row justify-content-between">
+          <div class="col-md col-sm" >
+            <div class="input-group input-group-md mb-3">
+              <input type="text" class="form-control" id="nama" placeholder="Nama" required>
+            </div>
+            <div class="input-group input-group-md mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group input-group-md mb-3">
+              <input type="text" class="form-control" id="project" placeholder="Project" required>
+            </div>
+            <div class="input-group input-group-md mb-2">
+              <textarea class="form-control" id="pesan" rows="4" placeholder="Pesan yang ingin disampaikan" required></textarea>
+            </div>
+            <!-- <div class="input-group input-group-sm mb-2"> -->
+              <button class="btn fw-bold mb-3" type="submit" id="button" 
+              style="background-color: var(--main);color: var(--stroke);border: 1px solid var(--button-text); width: 7rem; height: 3rem;">Kirim</button>
+            <!-- </div> -->
+          </div>
+          <div class="col-md col-sm">
+            <div class="card" style="background-color: var(--background);">
+              <div class="card-body" style="color: var(--headline);">
+                <h4 class="informasi ms-3 fw-bold">Phone</h4>
+                <p class="informasi form-text ms-3">+62815-8576-8935</p>
+                <p class="informasi form-text ms-3">+62838-9138-2671</p>
+                <h4 class="informasi ms-3 mt-2 fw-bold">Email</h4>
+                <p class="informasi form-text ms-3">badrudin.on@gmail.com</p>
+                <p class="informasi form-text ms-3">drudrmi@gmail.com</p>
+                <h4 class="informasi ms-3 mt-2 fw-bold">Alamat saya</h4>
+                <p class="informasi form-text ms-3">Jl, Mayor Oking Jaya Atmaja No 27 Citeureup. Kabupaten Bogor Kode Pos 16720. Provinsi Jawa Barat, Indonesia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
     <!-- Icons -->
     <script
       type="module"
