@@ -25,12 +25,11 @@ form.addEventListener("submit", (e) => {
   btnLoad.classList.toggle("d-none");
   btnKirim.classList.toggle("d-none");
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
+    .then(() => {
       btnLoad.classList.toggle("d-none");
       btnKirim.classList.toggle("d-none");
-      console.log("Success!", response);
       form.reset();
       msgAlert.classList.toggle("d-none");
     })
-    .catch((error) => console.error("Error!", error.message));
+    .catch(() => console.error("Error!"));
 });
