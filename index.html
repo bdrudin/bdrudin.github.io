@@ -165,7 +165,7 @@
   <div class="row">
     <div class="col-lg-4 col-sm-12 mb-1">
       <div class="card">
-        <div class="card-body" style="color: var(--background); background-color: var(--paragraf);">
+        <div class="card-body" style="color: var(--background); background-color: var(--main);">
           <h4 class="ms-2 mt-2 fw-bold" style="color: var(--button-text);">Frontend</h4>
           <ul>
             <li>Html</li>
@@ -178,7 +178,7 @@
 
     <div class="col-lg-4 col-sm-12 mb-1">
       <div class="card">
-        <div class="card-body" style="color: var(--background); background-color: var(--paragraf);">
+        <div class="card-body" style="color: var(--background); background-color: var(--main);">
           <h4 class="ms-2 mt-2 fw-bold" style="color: var(--button-text);">Backend</h4>
           <ul>
             <li>Node Js</li>
@@ -191,7 +191,7 @@
 
     <div class="col-lg-4 col-sm-12 mb-1">
       <div class="card">
-        <div class="card-body" style="color: var(--background); background-color: var(--paragraf);">
+        <div class="card-body" style="color: var(--background); background-color: var(--main);">
           <h4 class="ms-2 mt-2 fw-bold" style="color: var(--button-text);">Database</h4>
           <ul>
             <li>MySQL</li>
@@ -210,30 +210,33 @@
     <!-- Project -->
     <section class="project" id="project">
       <div class="container">
-        <h1 class="text-center fw-bold mb-2 mt-2">Project</h1>
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
+        <h1 class="text-center fw-bold mb-4 mt-2">Project</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 mb-2">
+            <div class="card ">
+              <div class="card-body" style="background-color: var(--background); color:var(--headline)">
                 <h4 class="text-center">Bookshelf</h4>
+                <hr>
                 <img src="./assets/img/bookshelf.png" alt="bookshelf" class="card-img-top">
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-6">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body" style="background-color: var(--background); color:var(--headline)">
                 <h4 class="text-center">Pesan Tiket</h4>
+                <hr>
                 <img src="./assets/img/pesan-tiket.png" alt="bookshelf" class="card-img-top">
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-6">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body" style="background-color: var(--background); color:var(--headline)">
                 <h4 class="text-center">Company Profile</h4>
+                <hr>
                 <img src="./assets/img/company-profile.png" alt="company-profile" class="card-img-top">
               </div>
             </div>
@@ -246,9 +249,10 @@
     <section id="contact" class="contact">
       <div class="container">
         <h1 class="text-center fw-bold mb-4 mt-2" style="color: var(--stroke);">Contact</h1>
+
         <hr>
         <div class="row justify-content-between">
-          <div class="col-md col-sm mt-2">
+          <div class="col-lg-4 col-md col-sm mt-2">
             <div class="card" style="background-color: var(--background);">
               <div class="card-body" style="color: var(--headline);">
                 <h4 class="informasi ms-3 fw-bold">Phone</h4>
@@ -262,23 +266,35 @@
               </div>
             </div>
           </div>
-          <div class="col-md col-sm mt-2" >
-            <div class="input-group input-group-md mb-3">
-              <input type="text" class="form-control" id="nama" placeholder="Nama" required>
-            </div>
-            <div class="input-group input-group-md mb-3">
-              <input type="email" class="form-control" id="email" placeholder="Email" required>
-            </div>
-            <div class="input-group input-group-md mb-3">
-              <input type="text" class="form-control" id="project" placeholder="Project" required>
-            </div>
-            <div class="input-group input-group-md mb-2">
-              <textarea class="form-control" id="pesan" rows="4" placeholder="Pesan yang ingin disampaikan" required></textarea>
-            </div>
-            <div class="d-flex justify-content-end mt-4">
-              <button class="btn fw-bold mb-3" type="submit" id="button" 
-              style="background-color: var(--main);color: var(--stroke);border: 1px solid var(--button-text); width: 7rem; height: 3rem;">Kirim</button>
-            </div>
+          <div class="col-lg-8 col-md col-sm mt-2" >
+            <form name='contact-form'>
+              <div class="input-group input-group-md mb-3">
+                <input name="nama" type="text" class="form-control" id="nama" placeholder="Nama" required>
+              </div>
+              <div class="input-group input-group-md mb-3">
+                <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+              </div>
+              <div class="input-group input-group-md mb-3">
+                <input name="project" type="text" class="form-control" id="project" placeholder="Project" required>
+              </div>
+              <div class="input-group input-group-md mb-2">
+                <textarea name="pesan" class="form-control" id="pesan" rows="4" placeholder="Pesan yang ingin disampaikan" required></textarea>
+              </div>
+
+              <div class="d-flex justify-content-end mt-4">
+                <div class="alert alert-success d-flex me-4 d-none msg-alert" role="alert" style="align-items: center; height: 3rem;">
+                  <strong>Pesan terkirim!</strong>
+                </div>
+
+                <button class="btn fw-bold mb-3 btn-kirim" type="submit" style="background-color: var(--main);color: var(--stroke); border: 1px solid var(--button-text); width: 7rem;  height: 3rem;">Kirim
+                </button>
+
+                <button class="btn fw-bold mb-3 btn-loading d-none" type="button" disabled style="background-color: var(--main);color: var(--stroke); border: 1px solid var(--button-text);  height: 3rem;">
+                  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </div>
+            </form>
           </div>
         </div>
 

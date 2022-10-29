@@ -9,3 +9,28 @@ function activeLink() {
 list.forEach((item) => {
   item.addEventListener("click", activeLink);
 });
+
+// kontak form
+const btnKirim = document.querySelector(".btn-kirim");
+const btnLoad = document.querySelector(".btn-loading");
+const msgAlert = document.querySelector(".msg-alert");
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyNpYRXnozrPhEMuArPgPxeBOLpfdanOUtY0ZEd1qnaOXndi3tx1zPEEK7vWSErF-U4vQ/exec";
+const form = document.forms["contact-form"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  //
+  btnLoad.classList.toggle("d-none");
+  btnKirim.classList.toggle("d-none");
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      btnLoad.classList.toggle("d-none");
+      btnKirim.classList.toggle("d-none");
+      console.log("Success!", response);
+      form.reset();
+      msgAlert.classList.toggle("d-none");
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
