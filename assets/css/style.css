@@ -197,6 +197,7 @@ nav .navigation {
 }
 .home-social a:hover {
   color: var(--highlight);
+  transform: scale(1.2);
 }
 .resume {
   display: flex;
@@ -209,9 +210,21 @@ nav .navigation {
   background-color: var(--main);
   border-radius: 5px;
   text-decoration: none;
+  animation: download-animate 1.2s infinite;
 }
 .resume a:hover {
   background-color: var(--highlight);
+}
+@keyframes download-animate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 /* end home */
 /* Profile */

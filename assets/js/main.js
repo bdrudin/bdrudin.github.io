@@ -33,3 +33,13 @@ form.addEventListener("submit", (e) => {
     })
     .catch(() => console.error("Error!"));
 });
+
+const textWelcome = document.querySelector(".text-welcome");
+// const text = textWelcome.textContent;
+const text = () => {
+  return `Hello World, <br> Selamat datang <br>Coders&#128293`;
+};
+// function createText() {
+//   return `Hello World, <br> Selamat datang! <br>Coders`;
+// }
+textWelcome.innerHTML = text();
